@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out this short survey.</p>
+  
+  <form id="survey-form">
+    <label id="name-label" for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <label id="email-label" for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <label id="number-label" for="number">Age:</label>
+    <input type="number" id="number" placeholder="Enter your age" min="10" max="100">
+
+    <label for="dropdown">Select your experience level:</label>
+    <select id="dropdown">
+      <option value="beginner">Beginner</option>
+      <option value="intermediate">Intermediate</option>
+      <option value="expert">Expert</option>
+    </select>
+
+    <fieldset>
+      <legend>Choose your gender:</legend>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Pick your interests:</legend>
+      <label><input type="checkbox" value="coding"> Coding</label>
+      <label><input type="checkbox" value="gaming"> Gaming</label>
+      <label><input type="checkbox" value="sports"> Sports</label>
+    </fieldset>
+
+    <label for="comments">Additional comments:</label>
+    <textarea id="comments" placeholder="Share your thoughts..."></textarea>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
